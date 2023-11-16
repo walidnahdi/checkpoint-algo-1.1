@@ -1,0 +1,38 @@
+ALGORITHM Sentence
+VAR
+    text : INTEGER:=1;
+    mot : INTEGER:=1;
+    vowelscounter : INTEGER:=0;
+    c : CHAR :="";
+BEGIN
+    WHILE (c<> ".") DO
+
+       Read(c);
+
+      text = text + 1;
+
+
+      IF (c=" ") THEN
+
+
+        mot = mot + 1;
+
+
+
+     END_IF
+
+     // check if the char c is vowel
+
+      IF ((c = "a") OR (c = "e") OR (c = "i") OR (c = "o") OR (c = "u") OR (c = "y")) THEN
+
+         voyel = voyel + 1 ;
+
+      END_IF
+
+    END_WHILE
+
+    Write ( "The length of the sentence :",text);
+    Write ( " The number of words in the sentence :",mot);
+    Write ("The number of vowels :",voyel);
+
+END
